@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ristorante Con Fusion</title>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <!-- <a class="navbar-brand mr-auto" href="#"><img src="#" height="30" width="41"></a>-->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> Карта помещений</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Помощь</a></li>
+                   
+                </ul>
+                <img style="margin-right: 5px;" src="https://cdnimg.rg.ru/img/content/213/33/98/nertfliks_d_850.jpg" alt="Admin" class="rounded-circle" width="40" height="40">
+                <span class="navbar-text">
+                    <a id="loginSite" href="autorization.html" >
+                        Company name
+                    </a>
+    
+                  
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" id="loginClose">&times;</button>
+                </div>
+                <div class="modal-body" style="background: #fcfcfce0;">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" >Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+             </div>
+    </div>
+   
+    <div id="reserveTable" class="modal fade" role="dialog" >
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content " style="background:rgb(247, 247, 247);">
+                <div class="modal-header" >
+                    <h4 class="modal-title" style="text-align: center;">Registration </h4>
+                    <button type="button" class="close" id="reserveClose">&times;</button>
+                </div>
+                <div class="modal-body" >
+                    
+                            <dl class="row">
+                                <div class="col-sm col-sm-10 ">
+                                    <form>
+                                        <div class="form-group row">
+                                           
+                                            <div class="col-md-10 offset-sm-1 offset-md-2">
+                                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Введите почту/Enter email
+                                                ">
+                                            </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                
+                                                <div class="col-md-10  offset-sm-1 offset-md-2">
+                                                    <input type="password" class="form-control" id="firstname" name="firstname" placeholder="Придумайте пароль/Enter passswod">
+                                                </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                   
+                                                    <div class="col-md-10  offset-sm-1 offset-md-2 ">
+                                                        <input type="password" class="form-control" id="firstname" name="firstname" placeholder="Повторите пароль/Reapeat passswod">
+                                                    </div>
+                                                    </div>
+                                       <!-- <div class="form-group row">
+                                            <label type="text" class="col-sm col-sm-2 col-form-label">Number of Guests</label>
+                                            <div class="col-md-10">
+                                                <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">1</label>
+                                                    <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">2</label>
+                                                    <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">3</label>
+                                                    <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">4</label>
+                                                    <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">5</label>
+                                                    <input type="radio" id="contactChoice1"name="contact" value="email">
+                                                    <label for="contactChoice1">6</label>
+                                            </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label type="text" class="col-md-2 col-form-label ">Section</label>
+                                                <div class="btn-group btn-group-toggle col-md-6" data-toggle="buttons">
+                                                    <label class=" alert alert-success btn btn-secondary active ">
+                                                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                                    </label>
+                                                    <label class="btn btn-secondary alert alert-danger">
+                                                      <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                                    </label>
+                                            </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label type="text" class="col-md-2 col-form-label">Date and Time</label>
+                                            <div class="col-md-4">
+                                            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                                </div>
+                                                <div class="col-10 offset-1 mt-4">
+                                                   
+                                                    <!--<button class="btn btn-secondary col-md-2  mt-4">
+                                                        <label class="text-align-center"> cancel</label>
+                                                    </button>-->
+                                                    <div class="col-10 offset-1 mt-4">
+                                                    <button class="btn col-md-5 mt-4 offset-md-5 offset-sm-3 " style="background: #FF5E03;">
+                                                        <span class="fa fa-long-arrow-right" style="font-size: 40px; color: white;"></span>  
+                                                    </button>
+                                                
+                                                </div>
+                                            </form>
+                                            </div>
+                            </dl>
+                       
+                </div>
+            </div>
+             </div>
+    </div>
+ 
+ 
+         <!--
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>
+            <div class="col col-sm col-md-4">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png">
+                    <div class="media-body">
+                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md">
+                
+                <div class="media">
+                   
+                <div class="media-body col-12 col-4">
+                <h2 class="mr-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                
+                </div>
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png">
+            
+            </div>
+        </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png">
+                <div class="media-body">
+                <h2 class="mt-0">Alberto Somayya</h2>
+                <h4>Executive Chef</h4>
+                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    -->
+        <div class="container mb-5 mt-5">
+            
+        <div class="col-12  col-sm-8 offset-md-2">
+            
+            <div class="card" name="tablereservecard" id="tablereservecard">
+                <h3 class="card-header text-white " style="background: #FF5E03;text-align: center;" >Alert</h3>
+                <div class="card-body" style="background-color: #ff5f031a;">
+                    <dl class="row">
+                        <div class="col-12 col-sm-10 col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    
+                                <div class="col-12 col-sm-10  ">
+                                    
+                                
+                                        <div class="alert alert-success  col-md-6 offset-md-4" role="alert">
+                                            Пароль успешно
+                                            изменен
+                                        </div>
+                                </div>
+                                <div class="col-12 col-sm-10  ">
+                                    
+                                    
+                                         
+                                </div>
+                            </form>
+                                    </div>
+                    </dl>
+                </div>
+            </div>
+            </div>
+
+        </div>
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
